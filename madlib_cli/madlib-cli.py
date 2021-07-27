@@ -33,7 +33,7 @@ and returns a string with the language parts inserted into the template.
 def merge(str_text:str,add_word:tuple):
     merged_text=str_text.format(*add_word)
     with open('assets/result.txt','w') as output:
-        output.write(final_text)
+        output.write(merged_text)
     return merged_text
 
 
@@ -46,3 +46,6 @@ def start_madlib():
         result.append(user_input)
     game_result=merge(text,result)
     return game_result
+
+if __name__== "__main__":
+    start_madlib()
