@@ -37,6 +37,10 @@ def merge(str_text:str,add_word:tuple):
     return merged_text
 
 
+"""
+This is where the game starts and all other functions work
+"""
+
 def start_madlib():
     read_file=read_template("assets/text.txt")
     text,val=parse_template(read_file)
